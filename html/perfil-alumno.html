@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del alumno</title>
+    <!-- Estilos CSS-->
+
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/sesion-estilos.css" type="text/css"> 
+    <!-- Estilos CSS-->    
+    <link rel="stylesheet" href="../css/styles-main.min.css"      type="text/css">
+
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css"> 
+    <!-- Icono -->
+    <link rel="icon" href="../img/logotipo-red-social.png" type="image/x-icon" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="../css/mdb.min.css" />
+</head>
+
+<body>
+<!-- Inicio class navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Inicio class container-fluid d-flex -->
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      
+      <!-- Inicio logotipo propuesta 1 -->
+      <div class="d-flex">    
+        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+            <img src="../img/logotipo-red-social.png" alt="Logotipo" class="img-fluid" id="logo">     
+        </a>
+      <a href="../html/perfil-alumno.html" style="text-decoration: none; color: black;"><h3 style="color: white;">Genbook</h3></a> 
+      </div>
+      <!-- Fin logotipo propuesta 1 -->
+      
+       <!-- Inicio de elementos centrales (opciones) -->
+       <ul class="navbar-nav flex-row d-none d-md-flex">
+          <li class="nav-item me-3 me-lg-1 active">
+              <a class="nav-link" href="#"></a>          
+              <span class="badge rounded-pill badge-notification bg-danger"></span>
+            </a>
+          </li>
+  
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link" href="#">
+              <span><i class="fas fa-flag fa-lg"></i></span>
+            </a>
+          </li>
+  
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link" href="#">
+              <span><i class="fas fa-video fa-lg"></i></span>
+            </a>
+          </li>      
+  
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link" href="#">
+              <span><i class="fas fa-users fa-lg"></i></span>
+              <span class="badge rounded-pill badge-notification bg-danger">+ 1</span>
+            </a>
+          </li>
+      </ul>
+    <!-- Fin de elementos centrales (opciones) -->
+  
+      <!-- Inicio de identificador alumno logueado -->
+      <ul class="navbar-nav flex-row">
+        <!-- Inicio avatar +  nombre alumno -->
+        <li class="nav-item me-3 me-lg-1">
+          <a class="nav-link d-sm-flex align-items-sm-center" href="#">
+            <img src="../img/perfil-alumno.webp" class="rounded-circle" height="22" alt="" loading="lazy" />
+            <strong class="d-none d-sm-block ms-1" id="id-usr" ></strong>
+          </a>
+        </li>
+        <!-- Fin avatar +  nombre alumno -->    
+  
+       <!-- Inicio menú para visualizar opciones de alumno -->
+        <li class="nav-item dropdown me-3 me-lg-1">
+          <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false" >
+            <i class="fas fa-chevron-circle-down fa-lg"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink" >         
+            <li>
+              <a class="dropdown-item" id="btnSalir" href="#">Cerrar Sesion</a>
+            </li>
+          </ul>
+        </li>
+        <!-- Fin menú para visualizar opciones de alumno -->
+      </ul>
+      <!-- Fin de identificador alumno logueado -->
+      
+    </div><!-- Fin class container-fluid d-flex -->
+  </nav><!-- Fin class navbar -->
+
+<!-- Inicio-contenido web -->
+<div class="flex-1 p-6 md:mt-16"> 
+
+  <!-- Inicio del Container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-md-offset-3">
+
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">Bienvenido</h3>
+            <h4 class="panel-title" id="id-usr2"></h4>
+          </div>
+
+          <div class="panel-body">
+            <p >
+            <b>
+            ¡Sesión iniciada correctamente!
+            </b>
+            </p>             
+          </div>
+
+        </div> <!-- Fin del panel panel-default -->
+      </div>
+    </div> <!-- Fin del Row --> 
+  </div> <!-- Fin del Container -->
+</div>
+
+ <!-- Inicio container -->
+ <div class="container">
+  <!-- Inicio row -->
+  <div class="row">
+      <!-- Inicio col col-xl-6 order-xl-2 -->
+      <div class="col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
+          <!-- Inicio items-grid -->
+          <div id="items-grid">
+              <!-- Inicio ui-block -->
+              <div class="ui-block">
+                  <article class="post">
+                      <div class="post__author author vcard inline-items">
+                          <img loading="lazy" src="../img/perfil-alumno.webp" width="36" height="36" alt="author">
+                          <div class="author-date">
+                              <a class="h6 post__author-name fn" href="perfil-alumno.html"  id="id-usr">Eduardo Valdez</a>                          
+                          </div>
+                      </div>
+                      <p>Crea una clase o únete a una clase existente y comienza a comunicarte con tus compañeros y profesores.
+                      </p>
+                  </article>
+              </div><!-- Fin ui-block -->
+          </div><!-- Fin items-grid -->
+      </div><!-- Fin col col-xl-6 order-xl-2 -->		
+
+      <!---- Inicio col col-xl-3 order-xl-1 -->
+      <div class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12">
+          <!-- Inicio ui-block -->
+          <div class="ui-block">
+              <div class="ui-block-title">
+                  <h6 class="title">Eduardo Valdez</h6>
+              </div>
+              <!-- Inicio ui-block-content -->
+              <div class="ui-block-content">
+                  <ul class="widget w-personal-info item-block">
+                  <li>
+                  <span class="title">Tu perfil está en un 25 % completado</span>                  
+                  </li>
+              </div><!-- Fin ui-block-content -->
+          </div><!-- Fin ui-block -->
+
+          <!-- INICIO SECCIÓN CLASES -->
+          <!-- Inicio ui-block -->
+          <div class="ui-block">
+              <div class="ui-block-title">
+                  <h6 class="title">Mis clases</h6>
+              </div>
+              <!-- Inicio ui-block-content -->
+              <div class="ui-block-content">
+                  <ul class="widget w-badges">                  
+
+                  <li>
+                  <a href="#">
+                  <img loading="lazy" src="../img/materia.webp" alt="author" width="38" height="38">
+                  </a>
+                  </li>
+
+                  <li>
+                  <a href="#">
+                  <img loading="lazy" src="../img/materia.webp" alt="author" width="38" height="38">
+                  </a>
+                  </li>
+
+                  <li>
+                  <a href="#">
+                  <img loading="lazy" src="../img/materia.webp" alt="author" width="38" height="38">
+                  </a>
+                  </li>
+
+                  <li>
+                  <a href="#">
+                  <img loading="lazy" src="../img/materia.webp" alt="author" width="38" height="38">
+                  </a>
+                  </li>
+                  </ul>
+              </div><!-- Fin ui-block-content -->
+          </div><!-- Fin ui-block -->
+          <!-- FIN SECCIÓN CLASES -->
+      </div><!---- Fin col col-xl-3 order-xl-1 -->
+  </div><!-- Fin row -->
+</div>
+<!-- Fin container -->  
+--
+
+<!-- Fin contenido web-->
+<!-- Scripts JS-->
+<script src="../js/jquery/jquery-1.11.0.js"></script>
+<script src="../js/sesion-alumno.js"></script>    
+<!-- MDB -->
+<script type="text/javascript" src="../js/mdb.min.js"></script>
+<!--Css Fontello-->
+<link rel="stylesheet" href="../css/fontello.css">
+<!--bootstrap.min.css 5.0.2-->
+<link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet" >
+<!--bootstrap.bundle.min.js 5.0.2-->
+<script src="../js/bootstrap/bootstrap.bundle.min.js" type = "text/javascript" ></script>
+</body>
+</html>
