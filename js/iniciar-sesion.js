@@ -9,5 +9,5 @@ $("#formLogin").submit(function(e){
  sessionStorage.setItem('usuario',$('#txtUsuario').val());
   //Asignamos el valor al objeto localStorage
  localStorage.setItem('password',$('#txtPassword').val());
- window.location = 'sesion-alumno.html';
+ window.location = 'perfil-alumno.html';
 });
