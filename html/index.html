@@ -8,6 +8,7 @@
     <title>Inicio | Bienvenido</title>
     <!-- Estilos CSS-->    
     <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 
 <body>
@@ -64,8 +65,8 @@
 
                 <div class="container-fluid d-flex justify-content-end align-items-center" id="navbar_sesión_buttons">
                     <!-- Inicio botón registro de usuarios --->
-                    <button class="btn btn-dark btn-block" style="box-shadow: 1px 1px 5px gray;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    <strong>Regístrate</strong>
+                    <button class="btn btn-dark btn-block" style="box-shadow: 1px 1px 5px gray;">
+                    <a href = "../html/registro_general.html" class = "link-light" style = "text-decoration: none;"><strong>Regístrate</strong></a>
                     </button>
                     <!-- Fin botón registro de usuarios --->
 
@@ -135,25 +136,45 @@
     </div>
 </section>
 
-<!-- Inicio de modal para registro de usuarios -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Registro</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Registra el tipo de usuario</p>
-            </div>
-            <div class="modal-footer">
-                <i class="icon-user"></i> <a class="btn btn-primary" data-bs-toggle="modal" href="../html/prototype_singin_profesor.html" role="button">Profesor</a>
-                <i class="icon-user"></i>  <a class="btn btn-primary" data-bs-toggle="modal" href="../html/prototype_singin_alumno.html" role="button">Alumno</a>  
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Fin de modal para registro de usuarios -->
+<!--Inicio de Footer-->
+
+<footer>
+    <!--Diseño del primer blok (Genbook)-->
+  <div class="container_footer" style = "margin-top: 100px;">
+      <div class="box_footer">
+          <div class="logo">
+              <img src="../img/logotipo-red-social.png" alt="imagen_genbook">
+              <h3 class="tit" >Genbook</h3>
+          </div>
+          <div class="text_fo">
+              <p>Estamos para servirte puedes ponerte en contacto con nosotros o bien visitar nuestras redes sociales para conocernos mejor.</p>
+          </div>
+      </div>
+  <!--Diseño de la segunda caja Sobre Nosotros-->
+      <div class="box_footer">
+          <h2>Sobre Nosotros</h2>
+          <a href="#">Acerca de</a>
+          <a href="./index.html">Inicio</a>
+          <a href="#">soporte.tecnico@genbook.mx</a>
+          <a href="./contacto.html">Contáctanos</a>
+                      
+      </div>
+      <!--Diseño de la tercera caja Redes Sociales-->
+      <div class="box_footer">
+          <h2>Redes Sociales</h2>
+          <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+          <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+          <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+          <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+      </div>
+
+  </div>
+  <!--Diseño de Copyright-->
+  <div class="box_copyright">
+      <hr>
+      <p>Todos los derechos reservados © 2021 <b>Genbook</b></p>
+  </div>
+</footer>
 
 <!--Css Fontello-->
 <link rel="stylesheet" href="../css/fontello.css">

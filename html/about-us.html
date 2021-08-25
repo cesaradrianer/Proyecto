@@ -9,6 +9,7 @@
     <!-- Estilos CSS-->   
     <link rel="stylesheet" href="../css/index.css" type="text/css">
     <link rel="stylesheet" href="../css/about-us.css" type="text/css">
+    <link rel="stylesheet" href="../css/footer.css">
     <script src="https://kit.fontawesome.com/68cfd5d2d9.js" crossorigin="anonymous"></script><!--font de iconos-->
 </head>
 
@@ -53,8 +54,8 @@
 
                 <div class="container-fluid d-flex justify-content-end align-items-center" id="navbar_sesión_buttons">
                      <!-- Inicio botón registro de usuarios --->
-                    <button class="btn btn-dark btn-block" style="box-shadow: 1px 1px 5px gray;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    <strong>Regístrate</strong>
+                    <button class="btn btn-dark btn-block" style="box-shadow: 1px 1px 5px gray;">
+                    <a href = "../html/registro_general.html" class = "link-light" style = "text-decoration: none;"><strong>Regístrate</strong></a>
                     </button>
                     <!-- Fin botón registro de usuarios --->
 
@@ -149,27 +150,6 @@
             </button>
         </div>
         <!--Fin del perfil de Iván Kasuo-->
-
-        <!--Inicio del perfil de Javier Cortés-->
-        <div class="col d-flex flex-column justify-content-start align-items-center"
-        style="border-style: solid; border-width: 0px; border-radius: 5px; border-color: #E2E2E2;">
-            <img src="../img/foto-javier.jpg" class="rounded-circle"
-            style="width: 180px; height: 180px; margin-top: 20px;">
-            <h3 style="margin: 20px;">
-                Javier Cortés
-            </h3>
-            <h5>
-                Fullstack Developer
-            </h5>
-            <p style="text-align: center;">
-                No hay nada que me guste mas que un buen reto
-            </p>
-            <button type="button" class="btn btn-primary" id="boton" data-bs-toggle="modal"
-            data-bs-target="#modalPush5">
-                Ver perfil
-            </button>
-        </div>
-        <!--Fin del perfil de Javier Cortés-->
 
         <!--Inicio del perfil de Juan José-->
         <div class="col d-flex flex-column justify-content-start align-items-center"
@@ -334,60 +314,11 @@ role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 </div>
 <!--Fin del modal de Iván-->
 
-<!--Inicio del modal de Javier-->
-<div class="modal fade" id="modalPush5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <!-- Inicio modal-dialog -->
-    <div class="modal-dialog modal-notify modal-info" role="document">
-        <!-- Inicio modal-content-text-center -->
-        <div class="modal-content text-center">
-            <!-- Inicio cabecera javier -->
-            <div class="modal-header d-flex justify-content-center">
-                <h4 class="heading" style="margin: 0;"><strong>Javier Cortes V.</strong></h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div><!-- Fin cabecera javier -->
-            <!-- Inicio contenido javier -->
-            <div class="modal-body">
-                <img src="../img/foto_javier_modal.png" class="rounded-circle" style="width: 180px; height: 180px;">
-                <p>
-                Estudiante de Ing. Desarrollo de Software <br />
-                Desarrollador FullStack <br />
-                Me gusta trabajar en equipo y no cedo ante la presión.
-                </p>
-            </div>
-            <!-- Fin contenido javier -->
-        </div>
-        <!-- Fin modal-content-text-center -->
-    </div>
-    <!-- Fin modal-dialog -->
-</div>
-<!--Fin del modal de Javier-->
-
-<!-- Inicio de modal para registro de usuarios -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Registro</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Registra el tipo de usuario</p>
-            </div>
-            <div class="modal-footer">
-                <i class="icon-user"></i> <a class="btn btn-primary" data-bs-toggle="modal" href="../html/prototype_singin_profesor.html" role="button">Profesor</a>
-                <i class="icon-user"></i>  <a class="btn btn-primary" data-bs-toggle="modal" href="../html/prototype_singin_alumno.html" role="button">Alumno</a>  
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Fin de modal para registro de usuarios -->
-
 <!--Inicio de Footer-->
 
 <footer>
       <!--Diseño del primer blok (Genbook)-->
-    <div class="container_footer">
+    <div class="container_footer" style = "margin-top: 100px;">
         <div class="box_footer">
             <div class="logo">
                 <img src="../img/logotipo-red-social.png" alt="imagen_genbook">

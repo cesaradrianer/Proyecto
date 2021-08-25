@@ -7,22 +7,11 @@
     <!-- Validaciones CSS-->
     <link rel="stylesheet" href="../css/validaciones.css" type="text/css">    
     <!-- Estilos CSS-->    
-    <link rel="stylesheet" href="../css/index.css" type="text/css">
-    <link rel="stylesheet" href="../css/sesion-estilos.css" type="text/css"> 
-    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css"> 
-    <!-- MDB icon -->
-    <link rel="icon" href="../img/logotipo-red-social.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/sesion-estilos.css" type="text/css">
+    <link rel="stylesheet" href="/css/sidebar.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
-    <!-- Google Fonts Roboto -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-    />
-      <!-- MDB -->
-      <link rel="stylesheet" href="../css/mdb.min.css" />
     <title>Crear clase</title>
-   
 </head>
 <body>
 
@@ -34,7 +23,7 @@
      
         <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
           <img
-            src="../img/logotipo-red-social.png"
+            src="../img/genBook.png"
             height="30"
             alt=""
             loading="lazy"
@@ -169,56 +158,27 @@
   </nav>
   <!-- Navbar -->
       
-    <div class = "container-fluid d-flex flex-row" style = "padding: 0;">
+<div class = "container-fluid d-flex flex-row" style = "padding: 0; height: 100vh;">
 
-        <!--Sidebar-->
-        <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style = "width: 280px; height: 100vh;">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+  <!--Sidebar-->
+  <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
             <span class="fs-4 ms-3">Menú</span>
-            </a>
-            <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
+          </a>
+          <hr>
+          <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a href="#" class="nav-link link-dark" aria-current = "page">
-                    <i class="fas fa-chalkboard-teacher me-3" style = "width: 16px; height: 16px;"></i>
-                Clases
-                </a>
+              <a href="/html/perfil-maestro.html" class="nav-link link-dark" aria-current="page">
+                <i class="fas fa-chalkboard-teacher me-2"></i>
+                Mis Clases
+              </a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link link-dark">
-                    <i class="fas fa-book me-3" style = "width: 16px; height: 16px;"></i>
-                Biblioteca
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link link-dark">
-                    <i class="fas fa-cog me-3" style = "width: 16px; height: 16px;"></i>
-                Configuración de perfil
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link link-dark">
-                    <i class="far fa-file-alt me-3" style = "width: 16px; height: 16px;"></i>
-                Evaluaciones
-                </a>
-            </li>
-            </ul>
-            <hr>
-            <div class="dropdown">
-            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                <strong>mdo</strong>
-            </a>
-            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                <li><a class="dropdown-item" href="#">Perfil</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-            </ul>
-            </div>
-        </div>
+            
+          </ul>
+  </div>
 
-        <!--Formulario para creación de clase-->
-        <div class="container-fluid d-flex flex-column w-50 align-items-center" id = "form-div">
+  <!--Formulario para creación de clase-->
+  <div class="container-fluid d-flex flex-column w-50 align-items-center" id = "form-div">
 
             <h1 class = "m-5">Asistente para creación de clases</h1>
 
@@ -296,14 +256,14 @@
                 
             </form>
 
-        </div>
+  </div>
 
-    </div>
+</div>
 
-      <!-- MDB -->
+<!-- MDB -->
 <script type="text/javascript" src="../js/mdb.min.js"></script>
 <script src="..//js/sesion-alumno.js"></script>
-<script type="text/javascript" src="../js/creacion_clase.js"></script>
+<script type="text/javascript" src="../js/crear_clase.js"></script>
 <script src="../js/sweetalert/sweetalert2.all.min.js"></script>
 <!--bootstrap.min.css 5.0.2-->
 <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet" >

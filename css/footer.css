@@ -1,0 +1,87 @@
+/* Inicio Footer*/
+/* Cuerpo del footer */
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../img/background-footer.svg);
+    background-size: cover;
+    /* Cambio de color alternativo */
+    /* background-color: rgb(175, 186, 218);
+    -webkit-mask-image: url("../img/background-footer.svg");
+    mask-image: url("../img/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover; */
+  }
+  /* Caja padre */
+  .container_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  /* Diseño de cajas principales del footer */
+  .box_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  /* Logo en el footer */
+  .logo img {
+    display: inline-flex;
+    width: 50px;
+  }
+  /* Diseño del nombre Genbook en el footer */
+  .tit {
+    display: inline-block;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /* Texto de la primera caja  */
+  .box_footer .text_fo {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+  }
+  /* Diseño de los titulos de las cajas */
+  .box_footer h2 {
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+  }
+  /* Diseño de las etiquetas a */
+  .box_footer a {
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .box_footer a:hover {
+    opacity: 0.8;
+  }
+  
+  .box_footer a .fab {
+    font-size: 20px;
+  }
+  /* Diseño de los elementos de Copyright */
+  .box_copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+  }
+  
+  .box_copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+  }
+  
+  .box_copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+  }
+  /* Fin del diseño de los elementos de Copyright */
