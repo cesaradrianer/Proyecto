@@ -10,6 +10,8 @@ const validate = (validador) => {
     const num_telefono = document.getElementById('telefono');
     const input_password = document.getElementById('password');
     const mensaje = document.getElementById('mensaje');
+    const cedula_p = document.getElementById('cedula');
+    const cedulaTipo = document.getElementById("cedula_tipo");
 
     //Validador nombre
     if (!nombre_valido(nombre.value)) {
@@ -43,7 +45,8 @@ const validate = (validador) => {
        usuario.focus();
        return false;
     } //Fin validador usuario
-    
+
+          
      //Validador teléfono
      if (!telefono_valido(telefono.value)) {
       Swal.fire({
@@ -55,7 +58,7 @@ const validate = (validador) => {
       return false;
   } //Fin validador teléfono
 
-    //Validador correo electrónico
+      //Validador correo electrónico
     if (!correo_valido(email.value)) {
         Swal.fire({
             icon: 'warning',
@@ -84,7 +87,7 @@ const validate = (validador) => {
         toast: true,
         position: 'top-end',
         showConfirmButton: false,
-        timer: 1000,
+        timer: 2000,
         timerProgressBar: true,
         didOpen: (toast) => {
           toast.addEventListener('mouseenter', Swal.stopTimer)
@@ -100,7 +103,7 @@ const validate = (validador) => {
 
       let user = {
         nombre: nombre_usuario.value,
-        userType: "alumno",
+        tipo_usuario: "Profesor",
         apellido: apellido_usuario.value,
         usuario: input_usuario.value,
         correo_electronico: correo_electronico.value,
@@ -112,21 +115,24 @@ const validate = (validador) => {
 
     return true;
 
+
+
 }
 //Fin validador campos
 
+
 function appendObjectToLocalStorage(object){
-  let users = [],
-  dataInLocalStorage = localStorage.getItem('users');
-
-  if (dataInLocalStorage !== null) 
-  {
-  users = JSON.parse(dataInLocalStorage);
+    let users = [],
+    dataInLocalStorage = localStorage.getItem('users');
+  
+    if (dataInLocalStorage !== null) 
+    {
+    users = JSON.parse(dataInLocalStorage);
+    }
+    users.push(object);
+    localStorage.setItem('users', JSON.stringify(users));
   }
-  users.push(object);
-  localStorage.setItem('users', JSON.stringify(users));
-}
-
+  
 
 //Declaración constantes para regex
 const nombre_valido = nombre => {
@@ -140,7 +146,9 @@ const apellido_valido = apellido => {
 const usuario_valido = usuario => {
   return /^[a-zA-Z0-9-_.]+$/u.test(usuario);
 }
-
+const cedula_valido = cedula => {
+    return /^\d{2}\d{8}$/.test(cedula);
+}
 
 const correo_valido = email => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
@@ -149,5 +157,6 @@ const correo_valido = email => {
 const telefono_valido = telefono => {
     return /^\d{2}\d{8}$/.test(telefono);
 }
+
 
 btnEnviar.addEventListener('click', validate);
