@@ -5,30 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de nosotros</title>
-    <!-- Estilos CSS-->   
-    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <title>Acerca de nosotros | Genbook</title>
+     <!-- Icono -->
+     <link rel="icon" href="../img/logotipo-genbook.png" type="image/x-icon" />
+    <!-- Estilos CSS -->   
+    <link rel="stylesheet" href="../css/estilos-navbar.css" type="text/css">   
+    <link rel="stylesheet" href="../css/footer.css" type="text/css">
     <link rel="stylesheet" href="../css/about-us.css" type="text/css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <script src="https://kit.fontawesome.com/68cfd5d2d9.js" crossorigin="anonymous"></script><!--font de iconos-->
+    <!-- bootstrap.min.css 5.0.2 -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" type="text/css">
 </head>
 
 <body>
+<!-- Inicio header-->
+<header>
 <!-- Inicio class navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- Inicio class container-fluid d-flex -->
     <div class="container-fluid d-flex justify-content-between align-items-center">            
-        <a href="./index.html"><img src="../img/logotipo-red-social.png" alt="Logotipo" class="img-fluid" id="logo">
+        <a href="./index.html"><img src="../img/logotipo-genbook.png" alt="Logotipo" class="img-fluid" id="logo">
             </a>
         <a href="index.html" style="text-decoration: none; color: black;">
         <h3>Genbook</h3>
         </a>
 
+        <!-- Inicio botón responsivo  -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation" id="navbar-button">
         <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- Fin botón responsivo  -->
 
         <!-- Inicio class collapse navbar-collapse -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -55,7 +62,7 @@
                 <div class="container-fluid d-flex justify-content-end align-items-center" id="navbar_sesión_buttons">
                      <!-- Inicio botón registro de usuarios --->
                     <button class="btn btn-dark btn-block" style="box-shadow: 1px 1px 5px gray;">
-                    <a href = "../html/registro_general.html" class = "link-light" style = "text-decoration: none;"><strong>Regístrate</strong></a>
+                    <a href = "../html/registro-general.html" class = "link-light" style = "text-decoration: none;"><strong>Regístrate</strong></a>
                     </button>
                     <!-- Fin botón registro de usuarios --->
 
@@ -70,28 +77,31 @@
         </div><!-- Fin class collapse navbar-collapse -->
     </div><!-- Fin class container-fluid d-flex -->
 </nav><!-- Fin class navbar -->
+</header><!-- Fin header -->
 
-<!--Inicio container-fluid about-us-->
+<br><br>
+<!-- Inicio container-fluid about-us -->
     <div class="container-fluid d-flex flex-column justify-content-center" style="margin-top: 40px;">
+        <br>
         <h1 style="text-align: center;">
             Este es el equipo que hace que Genbook sea una realidad.
         </h1>
         <p style="text-align: center; margin-top: 20px;">
-            La idea de Genbook es proporcionar una plataforma digital
-            para aquellos profesores que necesitan brindar clases de calidad y
-            tener<br> una buena comunicación y retroalimentación con sus alumnos.
+            La idea de Genbook es involucrar a profesores, alumnos y padres de familia
+            dentro de una plataforma <br> digital para hacer sencilla la organización y 
+            realización de actividades educativas desde cualquier lugar.
         </p>
     </div>
-<!--Fin container-fluid about-us-->
+<!-- Fin container-fluid about-us -->
 
-<!--Inicio container perfiles-->
+<!-- Inicio container perfiles -->
 <div class="container" style="margin-top: 40px;">
-    <!--Inicio row perfiles-->
+    <!-- Inicio row perfiles -->
     <div class="row">
-        <!-- Inicio del perfil de César Estrada-->
+        <!-- Inicio del perfil de César Estrada -->
         <div class="col d-flex flex-column justify-content-start align-items-center"
             style="border-style: solid; border-width: 0px; border-radius: 5px; border-color: #E2E2E2;">
-            <img src="../img/foto-cesar.jpg" class="rounded-circle"
+            <img src="../img/img-about-us/foto-cesar.jpg" class="rounded-circle"
             style="width: 180px; height: 180px; margin-top: 20px;">
             <h3 style="margin: 20px; text-align: center;">
                 César Estrada
@@ -107,12 +117,12 @@
                 Ver perfil
             </button>
         </div>
-        <!--Fin del perfil de César Estrada-->
+        <!-- Fin del perfil de César Estrada -->
 
-        <!--Inicio del perfil de Eduardo Valdez-->
+        <!-- Inicio del perfil de Eduardo Valdez -->
         <div class="col d-flex flex-column justify-content-start align-items-center"
         style="border-style: solid; border-width: 0px; border-radius: 5px; border-color: #E2E2E2;">
-            <img src="../img/foto-lalo.jpg" class="rounded-circle"
+            <img src="../img/img-about-us/foto-lalo.jpg" class="rounded-circle"
             style="width: 180px; height: 180px; margin-top: 20px;">
             <h3 style="margin: 10px; text-align: center;">
                 Eduardo Valdez
@@ -128,33 +138,12 @@
                 Ver perfil
             </button>
         </div>
-        <!--Fin del perfil de Eduardo Valdez-->
+        <!-- Fin del perfil de Eduardo Valdez -->       
 
-        <!--Inicio del perfil de Iván Kasuo-->
+        <!-- Inicio del perfil de Juan José -->
         <div class="col d-flex flex-column justify-content-start align-items-center"
         style="border-style: solid; border-width: 0px; border-radius: 5px; border-color: #E2E2E2;">
-            <img src="../img/foto_ivan.png" class="rounded-circle"
-            style="width: 180px; height: 180px; margin-top: 20px;">
-            <h3 style="margin: 20px;">
-                Iván Kasuo
-            </h3>
-            <h5>
-                Fullstack Developer
-            </h5>
-            <p style="text-align: center;">
-                En busca de conocimiento y superar los desafios
-            </p>
-            <button type="button" class="btn btn-primary" id="boton" data-bs-toggle="modal"
-            data-bs-target="#modalPush4" style="margin-bottom: 20px;">
-                Ver perfil
-            </button>
-        </div>
-        <!--Fin del perfil de Iván Kasuo-->
-
-        <!--Inicio del perfil de Juan José-->
-        <div class="col d-flex flex-column justify-content-start align-items-center"
-        style="border-style: solid; border-width: 0px; border-radius: 5px; border-color: #E2E2E2;">
-            <img src="../img/foto-juan.jpg" class="rounded-circle"
+            <img src="../img/img-about-us/foto-juan.jpg" class="rounded-circle"
             style="width: 180px; height: 180px; margin-top: 20px;">
             <h3 style="margin: 20px;">
                 Juan José
@@ -171,64 +160,60 @@
                 Ver perfil
             </button>
         </div>
-        <!--Fin del perfil de Juan José-->
+        <!-- Fin del perfil de Juan José -->
     </div>
-    <!--Fin row perfiles-->
+    <!-- Fin row perfiles -->
 </div>
-<!--Fin container perfiles-->
+<!-- Fin container perfiles -->
 
-<!--Inicio de Modales-->
+<!-- Inicio de Modales -->
 
-<!--Inicio del modal de César-->
+<!-- Inicio del modal de César -->
 <div class="modal fade" id="modalPush" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
 role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <!--Inicio modal-dialog-->
+    <!-- Inicio modal-dialog -->
     <div class="modal-dialog modal-notify modal-info" role="document">
-        <!--Inicio modal-content-text-center-->
+        <!-- Inicio modal-content-text-center -->
         <div class="modal-content text-center">
-            <!-- Inicio nombre perfil de César-->
+            <!-- Inicio nombre perfil de César -->
             <div class="modal-header d-flex justify-content-center">
                 <h4 class="heading" style="margin: 0;">César Adrián Estrada Reséndiz</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <!-- Fin nombre perfil de César-->
-            <!--Inicio contenido perfil de César-->
+            <!-- Fin nombre perfil de César -->
+            <!-- Inicio contenido perfil de César -->
             <div class="modal-body">
-                <img id = "modal_cesar_img" src="../img/Foto_César.jpg"
+                <img id = "modal_cesar_img" src="../img/img-about-us/Foto_César.jpg"
                 style="border-radius: 20px; max-width: 400px; margin-bottom: 20px;">
                 <p>Mi rol es de Desarrollador Fullstack, ayudo en realización de tareas generales del desarrollo.
                 Fomento la colaboración y manejo de cambios en el repositorio, y contribuyo al diseño e
                 implementación de
                 funciones mediante Javascript.
                 </p>
-            </div><!--Fin contenido perfil de César-->
-            <!--botón cerrar perfil -->
-            <!--<div class="modal-footer flex-center">
-            <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">Cerrar</a>
-            </div>-->
+            </div><!--Fin contenido perfil de César-->           
         </div>
         <!-- Fin modal-content-text-center -->
     </div>
-    <!--Fin modal-dialog-->
+    <!-- Fin modal-dialog -->
 </div>
-<!--Fin del modal de César-->
+<!-- Fin del modal de César -->
 
-<!--Inicio del modal de Eduardo-->
+<!-- Inicio del modal de Eduardo -->
 <div class="modal fade" id="modalPush2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
 role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <!-- Inicio modal-dialog -->
     <div class="modal-dialog modal-notify modal-info" role="document">
-        <!--Inicio modal-content-text-center-->
+        <!-- Inicio modal-content-text-center -->
         <div class="modal-content text-center">
-            <!-- Inicio nombre perfil de Eduardo-->
+            <!-- Inicio nombre perfil de Eduardo -->
             <div class="modal-header d-flex justify-content-center">
                 <h4 class="heading" style="margin: 0;">Eduardo Valdez</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <!-- Fin nombre perfil de Eduardo-->
-            <!--Inicio contenido perfil de Eduardo-->
+            <!-- Fin nombre perfil de Eduardo -->
+            <!-- Inicio contenido perfil de Eduardo -->
             <div class="modal-body">
-                <img src="../img/foto-lalo.jpg" class="rounded-circle" style="width: 180px; height: 180px;">
+                <img src="../img/img-about-us/foto-lalo.jpg" class="rounded-circle" style="width: 180px; height: 180px;">
                 <p>
                     <br>
                     <b>HOLA!</b><br> 😉✌
@@ -243,29 +228,29 @@ role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     nuestro sistema de información <br>🖥🌎
                 </p>
             </div>
-            <!-- Fin contenido perfil de Eduardo-->
+            <!-- Fin contenido perfil de Eduardo -->
         </div>
         <!-- Fin modal-content-text-center -->
     </div>
     <!-- Fin modal-dialog -->
 </div>
-<!--Fin del modal de Eduardo-->
+<!-- Fin del modal de Eduardo -->
 
-<!--Inicio del modal de Juan José-->
+<!-- Inicio del modal de Juan José -->
 <div class="modal fade" id="modalPush3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
 role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <!-- Inicio modal-dialog -->
     <div class="modal-dialog modal-notify modal-info" role="document">
-        <!--Inicio modal-content-text-center-->
+        <!-- Inicio modal-content-text-center -->
         <div class="modal-content text-center">
-            <!-- Inicio nombre perfil de Juan José-->
+            <!-- Inicio nombre perfil de Juan José -->
             <div class="modal-header d-flex justify-content-center">
                 <h4 class="heading" style="margin: 0;">Juan José Martínez</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div><!-- Fin nombre perfil de Juan José-->
-            <!--Inicio contenido perfil de Juan José-->
+            </div><!-- Fin nombre perfil de Juan José -->
+            <!-- Inicio contenido perfil de Juan José -->
             <div class="modal-body">
-                <img src="../img/foto-juan2.jpg" class="rounded-circle" style="width: 200px; height: 200px;">
+                <img src="../img/img-about-us/foto-juan2.jpg" class="rounded-circle" style="width: 200px; height: 200px;">
                 <p>
                 Mi rol es proponer ideas para el desarrolo del front-end.<br>
                 Colaborar con mis compañeros es placer infinito<br>
@@ -274,93 +259,66 @@ role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 el desarrollo de código es mi pasión<br>🖥
                 </p>
             </div>
-            <!-- Fin contenido perfil de Juan José-->
+            <!-- Fin contenido perfil de Juan José -->
         </div>
         <!-- Fin modal-content-text-center -->
     </div>
     <!-- Fin modal-dialog -->
 </div>
-<!--Fin del modal de Juan José-->
+<!-- Fin del modal de Juan José -->
 
-<!--Inicio del modal de Iván-->
-<div class="modal fade" id="modalPush4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <!-- Inicio modal-dialog -->
-    <div class="modal-dialog modal-notify modal-info" role="document">
-        <!--Inicio modal-content-text-center-->
-        <div class="modal-content text-center">
-            <!-- Inicio nombre perfil de Iván-->
-            <div class="modal-header d-flex justify-content-center">
-                <h4 class="heading" style="margin: 0;">Ivan Kasuo Delgado Dolores</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div><!-- Fin nombre perfil de Iván-->
-            <!--Inicio contenido perfil de Iván-->
-            <div class="modal-body">
-                <img src="../img/foto-ivan2.png"
-                class="border-radius: 20px; max-width: 100px; margin-bottom: 20px;">
-                <p>
-                <br>
-                <b>¡Mucho gusto!</b><br>
-                <br>Mi función como Desarrollador Web Full Stack es encargarme junto con mi equipo
-                de manejar cada uno de los aspectos relacionados con la creación y el mantenimiento de
-                esta Red de Estudio con las herramientas necesarias.
-                </p>
-            </div>
-            <!-- Fin contenido perfil de Iván-->
-        </div>
-        <!-- Fin modal-content-text-center -->
-    </div>
-    <!-- Fin modal-dialog -->
-</div>
-<!--Fin del modal de Iván-->
-
-<!--Inicio de Footer-->
-
+<!-- Inicio de footer -->
 <footer>
-      <!--Diseño del primer blok (Genbook)-->
-    <div class="container_footer" style = "margin-top: 100px;">
-        <div class="box_footer">
-            <div class="logo">
-                <img src="../img/logotipo-red-social.png" alt="imagen_genbook">
-                <h3 class="tit" >Genbook</h3>
-            </div>
-            <div class="text_fo">
-                <p>Estamos para servirte puedes ponerte en contacto con nosotros o bien visitar nuestras redes sociales para conocernos mejor.</p>
-            </div>
-        </div>
-    <!--Diseño de la segunda caja Sobre Nosotros-->
-        <div class="box_footer">
-            <h2>Sobre Nosotros</h2>
-            <a href="#">Acerca de</a>
-            <a href="./index.html">Inicio</a>
-            <a href="#">soporte.tecnico@genbook.mx</a>
-            <a href="./contacto.html">Contáctanos</a>
-                        
-        </div>
-        <!--Diseño de la tercera caja Redes Sociales-->
-        <div class="box_footer">
-            <h2>Redes Sociales</h2>
-            <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
-            <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-            <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-            <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
-        </div>
+  <!-- Inicio Diseño del primer block (Genbook) -->
+  <div class="container_footer" style = "margin-top: 100px;">
+      <div class="box_footer">
+          <div class="logo">
+              <img src="../img/logotipo-genbook.png" alt="imagen_genbook">
+              <h3 class="tit" >Genbook</h3>
+          </div>
+          <div class="text_fo">
+              <p>Estamos para servirte. Puedes ponerte en contacto con nosotros o, bien, visitar nuestras redes sociales para conocernos mejor.</p>
+          </div>
+      </div>
 
-    </div>
-    <!--Diseño de Copyright-->
-    <div class="box_copyright">
-        <hr>
-        <p>Todos los derechos reservados © 2021 <b>Genbook</b></p>
-    </div>
+      <!-- Inicio Diseño de la segunda caja Sobre Nosotros -->
+      <div class="box_footer">
+          <h2>Sobre Nosotros</h2>
+          <a href="../html/index.html">Inicio</a>
+          <a href="../html/about-us.html">Acerca de</a>
+          <a href="./contacto.html">Contáctanos</a>
+          <a href="#">soporte.tecnico@genbook.mx</a>                          
+      </div>
+      <!-- Fin Diseño de la segunda caja Sobre Nosotros -->
+
+      <!-- Inicio Diseño de la tercera caja Redes Sociales -->
+      <div class="box_footer">
+          <h2>Redes Sociales</h2>
+          <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+          <a href="#"> <i class="fab fa-twitter-square"></i> Twitter</a>
+          <a href="#"> <i class="fab fa-instagram-square"></i> Instagram</a>
+          <a href="#"> <i class="fab fa-linkedin"></i> Linkedin</a>              
+      </div>
+      <!-- Fin Diseño de la tercera caja Redes Sociales -->
+
+  </div>
+  <!-- Fin Diseño del primer block (Genbook) -->
+
+  <!-- Inicio Diseño de Copyright -->
+  <div class="box_copyright">
+      <hr>
+      <p>Todos los derechos reservados © 2021 <b>Genbook</b></p>
+  </div>
+  <!-- Fin Diseño de Copyright -->
+  
 </footer>
+<!-- Fin de footer-->
 
-<!--Css Fontello-->
-<link rel="stylesheet" href="../css/fontello.css">
-<!--bootstrap.min.css 5.0.2-->
-<link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet" >
-<!--bootstrap.bundle.min.js 5.0.2-->
+<!-- JS Scripts -->
+<!-- bootstrap.bundle.min.js 5.0.2 -->
 <script src="../js/bootstrap/bootstrap.bundle.min.js" type = "text/javascript" ></script>
-
+<!-- Font de iconos -->
+<script src="../js/logotipos-fontawesome/logotipos.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
