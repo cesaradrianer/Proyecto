@@ -182,7 +182,7 @@
 
             <h1 class = "m-5">Asistente para creación de clases</h1>
 
-            <form class = "w-50 border rounded-3 shadow-lg p-3 mb-5 bg-body rounded" id = "clase_form">
+            <form action = "../html/perfil-profesor.html" class = "w-50 border rounded-3 shadow-lg p-3 mb-5 bg-body rounded" id = "clase_form">
 
                 <div class = "m-3">
                     <label for = "clase_name" class = "form-label">¿Cómo se llamará?</label>
@@ -228,6 +228,13 @@
                     <input type = "text" class = "form-control" name = "clave_materia" id = "clave_materia">
 
                 </div>
+
+                <div class="m-3">
+
+                  <label for = "">Link de la materia</label>
+                  <input type = "text" class = "form-control" name = "materiaLink" id = "materiaLink">
+
+              </div>
                 
                 <label for = "clase_materia" class = "form-label ms-3">Elige un horario para impartirla</label>
                 <div class = "input-group">
@@ -244,14 +251,14 @@
 
                     <label for = "clase_grado" class = "form-label">Elige el grado:</label>
                     <select class = "form-select" name = "clase_grado" id = "clase_grado">
-                        <option value = "primero">1°</option>
-                        <option value = "segundo">2°</option>
-                        <option value = "tercero">3°</option>
+                        <option value = "Primero">1°</option>
+                        <option value = "Segundo">2°</option>
+                        <option value = "Tercero">3°</option>
                     </select>
                 </div>
 
                 <div class="m-3 d-flex flex-row justify-content-center">
-                    <button  class = "btn btn-primary" type = "submit" id="btn-enviar">Crear</button>
+                    <button class = "btn btn-primary" type = "submit" id="btn-enviar">Crear</button>
                 </div>
                 
             </form>
@@ -263,7 +270,7 @@
 <!-- MDB -->
 <script type="text/javascript" src="../js/mdb.min.js"></script>
 <script src="..//js/sesion-alumno.js"></script>
-<script type="text/javascript" src="../js/crear-clase.js"></script>
+<script type="text/javascript" src="../js/clase_data.js"></script>
 <script src="../js/sweetalert/sweetalert2.all.min.js"></script>
 <!--bootstrap.min.css 5.0.2-->
 <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet" >
