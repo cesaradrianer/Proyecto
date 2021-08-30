@@ -25,7 +25,7 @@
     <!-- Inicio class container-fluid d-flex -->
     <div class="container-fluid d-flex justify-content-between align-items-center">            
         <img src="../img/logotipo-genbook.png" alt="Logotipo" class="img-fluid" id="logo">
-        <a href="index.html" style="text-decoration: none; color: black;">
+        <a href="../index.html" style="text-decoration: none; color: black;">
         <h3>Genbook</h3>
         </a>
 
@@ -47,13 +47,13 @@
 
                      <!-- Inicio quiénes somos -->
                     <li class="nav-item me-3 ms-3">
-                        <a href="about-us.html" class="nav-link text-nowrap">Equipo de desarrollo</a>
+                        <a href="../html/about-us.html" class="nav-link text-nowrap">Equipo de desarrollo</a>
                     </li>
                     <!-- Fin quiénes somos --> 
 
                     <!-- Inicio contáctanos -->
                     <li class="nav-item me-3 ms-3">
-                        <a href="contacto.html" class="nav-link">Contáctanos</a>
+                        <a href="../html/contacto.html" class="nav-link">Contáctanos</a>
                     </li>
                     <!-- Fin contáctanos -->
                     
@@ -61,7 +61,7 @@
 
                 <!-- Inicio botón iniciar sesión --->
                 <button class="btn btn-primary btn-xs ms-2" style="box-shadow: 1px 1px 5px gray;">
-                <a class="text-nowrap" href="iniciar-sesion.html" style="text-decoration: none; color: white;"><strong>Iniciar sesión</strong></a>
+                <a class="text-nowrap" href="../html/iniciar-sesion.html" style="text-decoration: none; color: white;"><strong>Iniciar sesión</strong></a>
                 </button>
                 <!-- Fin botón iniciar sesión --->                                       
                 
@@ -72,7 +72,7 @@
 
 <!-- Inicio formulario registro de alumnos -->
 <section class="p-4 d-flex justify-content-center mb-4 mt-5">
-    <form id="contact-form" class="text-center" style="width: 100%; max-width: 350px">
+    <form id="formulario-registro-alumno" class="text-center" style="width: 100%; max-width: 350px">
         <h2>Registro de alumno</h2>
     </form>
 </section>
@@ -83,8 +83,8 @@
             <form id="needs-validation" novalidate>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <i class="icon-user"></i> <label class="form-label" for="nombre">Ingresa tu nombre</label>
-                        <input type="text" id="nombre" name="nombre" required pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,30}" required
+                        <i class="icon-user"></i> <label class="form-label" for="nombreAlumno">Ingresa tu nombre</label>
+                        <input type="text" id="nombreAlumno" name="nombreAlumno" required pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,30}" required
                         title="Solo se aceptan letras" class="form-control" placeholder="Ejemplo: Julio César" required>
                         <div class="valid-feedback">
                             Buen Trabajo!
@@ -92,8 +92,8 @@
                     </div>
 
                     <div class="col-md-6 mb-3">
-                        <i class="icon-user"></i> <label class="form-label" for="apellido">Ingresa tu apellido</label>
-                        <input type="text" id="apellido" name="apellido" required pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,30}" required
+                        <i class="icon-user"></i> <label class="form-label" for="apellidoAlumno">Ingresa tu apellido</label>
+                        <input type="text" id="apellidoAlumno" name="apellidoAlumno" required pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,30}" required
                         title="Solo se aceptan letras" class="form-control" placeholder="Ejemplo: Castillo" required>
                         <div class="valid-feedback">
                             Buen Trabajo!
@@ -103,8 +103,8 @@
 
                 <div class="form-row">
                     <div class="col-md-5 mb-3">
-                        <i class="icon-user"></i> <label class="form-label" for="nombre">Elige un nombre de usuario</label>
-                        <input type="text" class="form-control" id="usuario" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{5,21}$" required title="Solo se aceptan letras" class="form-control" 
+                        <i class="icon-user"></i> <label class="form-label" for="usuarioAlumno">Elige un nombre de usuario</label>
+                        <input type="text" class="form-control" id="usuarioAlumno" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{5,21}$" required title="Solo se aceptan letras" class="form-control" 
                         placeholder="Ejemplo: jcesar99" required>
                         <div class="invalid-feedback">
                           Por favor elige un nombre de usuario
@@ -112,17 +112,17 @@
                     </div>
 
                     <div class="col-md-3 mb-3">
-                        <i class="icon-phone-squared"></i><label class="form-label" for="subject">Telefóno</label>
-                        <input type="text" id = "telefono" class="form-control" name="telefono" required pattern="[0-9]{2}[0-9]{8}" required
+                        <i class="icon-phone-squared"></i><label class="form-label" for="telefonoAlumno">Telefóno</label>
+                        <input type="text" id = "telefonoAlumno" class="form-control" name="telefonoAlumno" required pattern="[0-9]{2}[0-9]{8}" required
                         maxlength="11" title="Ingresa un teléfono válido" placeholder="Ejemplo: 5512362448"
                         class="form-control">
                     </div>
 
                     <div class="col-md-4 mb-3">
-                        <i class="icon-mail"></i><label class="form-label" for="email">Correo electrónico</label>
-                        <input input type="email" id="email" name="email" required
+                        <i class="icon-mail"></i><label class="form-label" for="correoAlumno">Correo electrónico</label>
+                        <input input type="email" id="correoAlumno" name="correoAlumno" required
                         pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9]){1,}?$"
-                        title="Ingresa una dirección de correo electrónico válida" placeholder="Ejemplo: julio.castillo@outlook.com"
+                        title="Ingresa una dirección de correo electrónico válida" placeholder="Ejemplo: jc.castillo@gmail.com"
                         class="form-control">
                         <div class="invalid-feedback">
                             Ingrese Correo Valido
@@ -132,8 +132,8 @@
                     <!-- ******* INICIO CONTRASEÑA ******* -->
                     <!-- Inicio campo contraseña -->
                     <div class="col-md-6 mb-4">
-                        <i class="icon-lock"></i><label class="form-label" for="password">Contraseña</label>
-                        <input type="password" id="password" name="password" required pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,30}" required
+                        <i class="icon-lock"></i><label class="form-label" for="passwordAlumno">Contraseña</label>
+                        <input type="password" id="passwordAlumno" name="passwordAlumno" required pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,30}" required
                         title="Solo se aceptan letras" placeholder="Ingresa tu contraseña" class="form-control" />
                     </div>
                     <!-- Fin campo contraseña -->
@@ -161,7 +161,7 @@
                         <!-- Fin opción para registrarse como profesor -->
 
                         <!-- Inicio botón iniciar sesión -->
-                        <a href="iniciar-sesion.html" class="nav-link text-nowrap">¿Ya tienes una cuenta? Iniciar sesión</a>
+                        <a href="../html/iniciar-sesion.html" class="nav-link text-nowrap">¿Ya tienes una cuenta? Iniciar sesión</a>
                         <!-- Fin botón iniciar sesión -->
                     </div>
                 </div>
@@ -191,7 +191,7 @@
             <h2>Sobre Nosotros</h2>
             <a href="../html/index.html">Inicio</a>
             <a href="../html/about-us.html">Acerca de</a>
-            <a href="./contacto.html">Contáctanos</a>
+            <a href="../html/contacto.html">Contáctanos</a>
             <a href="#">soporte.tecnico@genbook.mx</a>                          
         </div>
         <!-- Fin Diseño de la segunda caja Sobre Nosotros -->
