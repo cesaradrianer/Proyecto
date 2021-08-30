@@ -1,11 +1,12 @@
 @media screen and (max-width: 425px) {
-    #modal_cesar_img {
-        width: 300px;
-    }
+  #modal_cesar_img {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    #modal_cesar_img {
-        width: 260px;
-    }
+  #modal_cesar_img {
+    width: 260px;
+  }
 }
+

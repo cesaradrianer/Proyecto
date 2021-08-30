@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de profesores | Genbook </title>
+     <!-- Icono -->
+     <link rel="icon" href="../img/logotipo-genbook.png" type="image/x-icon" />
+    <!-- Estilos CSS-->    
+    <link rel="stylesheet" href="../css/estilos-navbar.css" type="text/css">
+    <link rel="stylesheet" href="../css/footer.css" type="text/css">
+    <!-- bootstrap.min.css 4.6 -->   
+    <link rel="stylesheet" href="../css/bootstrap-4.6/bootstrap.min.css" type="text/css">
+    <!-- bootstrap.min.css 5.0.2 -->
+    <!-- <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" type="text/css"> -->
+    <!-- Validaciones CSS-->   
+    <link rel="stylesheet" href="../css/validaciones.css" type="text/css">   
+</head>
+
+<body>
+<!-- Inicio class navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Inicio class container-fluid d-flex -->
+  <div class="container-fluid d-flex justify-content-between align-items-center">            
+      <img src="../img/logotipo-genbook.png" alt="Logotipo" class="img-fluid" id="logo">
+      <a href="../index.html" style="text-decoration: none; color: black;">
+      <h3>Genbook</h3>
+      </a>
+
+      <!-- Inicio botón responsivo  -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation" id="navbar-button">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Fin botón responsivo  -->
+
+      <!-- Inicio class collapse navbar-collapse -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Inicio class container-fluid d-flex -->
+          <div class="container-fluid d-flex justify-content-between" id="navbar_links">
+
+              <!-- Inicio menú navbar-nav -->
+              <ul class="navbar-nav"> 
+
+                   <!-- Inicio quiénes somos -->
+                  <li class="nav-item me-3 ms-3">
+                      <a href="../html/about-us.html" class="nav-link text-nowrap">Equipo de desarrollo</a>
+                  </li>
+                  <!-- Fin quiénes somos --> 
+
+                  <!-- Inicio contáctanos -->
+                  <li class="nav-item me-3 ms-3">
+                      <a href="../html/contacto.html" class="nav-link">Contáctanos</a>
+                  </li>
+                  <!-- Fin contáctanos -->
+                  
+              </ul><!-- Fin menú navbar-nav -->
+
+              <!-- Inicio botón iniciar sesión --->
+              <button class="btn btn-primary btn-xs ms-2" style="box-shadow: 1px 1px 5px gray;">
+              <a class="text-nowrap" href="../html/iniciar-sesion.html" style="text-decoration: none; color: white;"><strong>Iniciar sesión</strong></a>
+              </button>
+              <!-- Fin botón iniciar sesión --->                                       
+              
+          </div><!-- Fin class container-fluid d-flex -->            
+      </div><!-- Fin class collapse navbar-collapse -->
+  </div><!-- Fin class container-fluid d-flex -->
+</nav><!-- Fin class navbar -->
+
+<!-- Inicio formulario registro de alumnos -->
+<section class="p-4 d-flex justify-content-center mb-4 mt-5">
+  <form id="formulario-registro-profesor" class="text-center" style="width: 100%; max-width: 350px">
+      <h2>Registro de profesor</h2>
+  </form>
+</section>
+
+<div class="container w-50 p-4" style = "border-style: solid; border-width: 1px; border-radius: 10px; border-color: #dadada;">
+  <div class="row">
+      <div class="col-12">
+          <form id="needs-validation" novalidate>
+              <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                      <i class="icon-user"></i> <label class="form-label" for="nombreProfesor">Ingresa tu nombre</label>
+                      <input type="text" id="nombreProfesor" name="nombreProfesor" required pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,30}" required
+                      title="Solo se aceptan letras" class="form-control" placeholder="Ejemplo: Juan Carlos" required>
+                      <div class="valid-feedback">
+                          Buen Trabajo!
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                      <i class="icon-user"></i> <label class="form-label" for="apellidoProfesor">Ingresa tu apellido</label>
+                      <input type="text" id="apellidoProfesor" name="apellidoProfesor" required pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,30}" required
+                      title="Solo se aceptan letras" class="form-control" placeholder="Ejemplo: Valencia" required>
+                      <div class="valid-feedback">
+                          Buen Trabajo!
+                      </div>
+                  </div>
+              </div>
+
+              <div class="form-row">
+                  <div class="col-md-5 mb-3">
+                      <i class="icon-user"></i> <label class="form-label" for="usuarioProfesor">Elige un nombre de usuario</label>
+                      <input type="text" class="form-control" id="usuarioProfesor" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{5,21}$" required title="Solo se aceptan letras" class="form-control" 
+                      placeholder="Ejemplo: jcvalencia" required>
+                      <div class="invalid-feedback">
+                        Por favor elige un nombre de usuario
+                      </div>
+                  </div>
+
+                  <div class="col-md-3 mb-3">
+                      <i class="icon-phone-squared"></i><label class="form-label" for="telefonoProfesor">Telefóno</label>
+                      <input type="text" id = "telefonoProfesor" class="form-control" name="telefonoProfesor" required pattern="[0-9]{2}[0-9]{8}" required
+                      maxlength="11" title="Ingresa un teléfono válido" placeholder="Ejemplo: 5512362448"
+                      class="form-control">
+                  </div>
+
+                  <div class="col-md-4 mb-3">
+                      <i class="icon-mail"></i><label class="form-label" for="correoProfesor">Correo electrónico</label>
+                      <input input type="email" id="correoProfesor" name="correoProfesor" required
+                      pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9]){1,}?$"
+                      title="Ingresa una dirección de correo electrónico válida" placeholder="jcvalencia@gmail.com"
+                      class="form-control">
+                      <div class="invalid-feedback">
+                          Ingrese Correo Valido
+                      </div>
+                  </div>
+
+                  <!-- ******* INICIO CONTRASEÑA ******* -->
+                  <!-- Inicio campo contraseña -->
+                  <div class="col-md-6 mb-4">
+                      <i class="icon-lock"></i><label class="form-label" for="passwordProfesor">Contraseña</label>
+                      <input type="password" id="passwordProfesor" name="passwordProfesor" required pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,30}" required
+                      title="Solo se aceptan letras" placeholder="Ingresa tu contraseña" class="form-control" />
+                  </div>
+                  <!-- Fin campo contraseña -->
+
+                  <!-- Inicio campo repite tu contraseña -->
+                  <div class="col-md-6 mb-4">
+                      <i class="icon-lock"></i><label class="form-label" for="repitePassword">Repite tu contraseña</label>
+                      <input type="password" id="repitePassword" name="repitePassword" required pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,30}" required
+                      title="Solo se aceptan letras" placeholder="Repite tu contraseña" class="form-control" />
+                      <div class="invalid-feedback">
+                          No coincide la contraseña
+                      </div>
+                  </div>
+                  <!-- Fin campo repite tu contraseña --> 
+                  <!-- ******* FIN CONTRASEÑA ******* -->     
+
+                  <div class="col d-flex flex-column justify-content-center align-items-center">
+                      <!-- Inicio botón -->
+                      <button class="btn btn-primary mb-6" input type="submit" value="Enviar"
+                      id="btn-enviar">Registrarse</button>
+                      <!-- Fin botón -->         
+
+                      <!-- Inicio opción para registrarse como profesor -->
+                      <a href="../html/registro-alumno.html" class="nav-link text-nowrap">Registro para alumno</a>
+                      <!-- Fin opción para registrarse como profesor -->
+
+                      <!-- Inicio botón iniciar sesión -->
+                      <a href="../html/iniciar-sesion.html" class="nav-link text-nowrap">¿Ya tienes una cuenta? Iniciar sesión</a>
+                      <!-- Fin botón iniciar sesión -->
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+<!-- Fin formulario registro de alumnos -->
+
+<!-- Inicio de footer -->
+<footer>
+    <!-- Inicio Diseño del primer block (Genbook) -->
+    <div class="container_footer" style = "margin-top: 100px;">
+        <div class="box_footer">
+            <div class="logo">
+                <img src="../img/logotipo-genbook.png" alt="imagen_genbook">
+                <h3 class="tit" >Genbook</h3>
+            </div>
+            <div class="text_fo">
+                <p>Estamos para servirte. Puedes ponerte en contacto con nosotros o, bien, visitar nuestras redes sociales para conocernos mejor.</p>
+            </div>
+        </div>
+
+        <!-- Inicio Diseño de la segunda caja Sobre Nosotros -->
+        <div class="box_footer">
+            <h2>Sobre Nosotros</h2>
+            <a href="../html/index.html">Inicio</a>
+            <a href="../html/about-us.html">Acerca de</a>
+            <a href="../html/contacto.html">Contáctanos</a>
+            <a href="#">soporte.tecnico@genbook.mx</a>                          
+        </div>
+        <!-- Fin Diseño de la segunda caja Sobre Nosotros -->
+
+        <!-- Inicio Diseño de la tercera caja Redes Sociales -->
+        <div class="box_footer">
+            <h2>Redes Sociales</h2>
+            <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+            <a href="#"> <i class="fab fa-twitter-square"></i> Twitter</a>
+            <a href="#"> <i class="fab fa-instagram-square"></i> Instagram</a>
+            <a href="#"> <i class="fab fa-linkedin"></i> Linkedin</a>              
+        </div>
+        <!-- Fin Diseño de la tercera caja Redes Sociales -->
+
+    </div>
+    <!-- Fin Diseño del primer block (Genbook) -->
+
+    <!-- Inicio Diseño de Copyright -->
+    <div class="box_copyright">
+        <hr>
+        <p>Todos los derechos reservados © 2021 <b>Genbook</b></p>
+    </div>
+    <!-- Fin Diseño de Copyright -->
+    
+</footer>
+<!-- Fin de footer-->
+
+
+<!-- JS Scripts -->
+<!-- Scripts de validación -->
+<script src="../js/jquery/jquery-1.11.0.js"></script>
+<!-- bootstrap.bundle.min.js 4.6 -->
+<script src="../js/bootstrap-4.6/bootstrap.bundle.min.js" type = "text/javascript" ></script>
+<!-- bootstrap.bundle.min.js 5.0.2 -->
+<script src="../js/bootstrap/bootstrap.bundle.min.js" type = "text/javascript" ></script>
+<!-- fontawesome 5.12.1 -->
+<script src="../js/logotipos-fontawesome/logotipos.js" crossorigin="anonymous"></script>
+<!-- Scripts de validación -->
+<script src="../js/registro-profesor.js"></script>
+<script src="../js/sweetalert/sweetalert2.all.min.js"></script>
+<!-- <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script> -->
+
+</body>
+</html>

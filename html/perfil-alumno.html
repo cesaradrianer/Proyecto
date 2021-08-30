@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title id="id-title-usr"></title> -->
+    <title>Perfil alumno | Genbook </title>
+    <!-- Icono -->
+    <link rel="icon" href="../img/logotipo-genbook.png" type="image/x-icon" />
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../css/estilos-navbar.css" type="text/css">
+    <link rel="stylesheet" href="../css/sesion-estilos.css" type="text/css">
+    <link rel="stylesheet" href="../css/styles-main.min.css" type="text/css">   
+    <!-- MDB -->
+    <link rel="stylesheet" href="../css/mdb.min.css" />   
+    <!-- Fontawesome -->    
+    <link rel="stylesheet" href="../css/logotipos-fontawesome/all.min.css">       
+    <!-- bootstrap.min.css 5.0.2 -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" type="text/css">
+</head>
+
+<body>
+     <!-- Inicio header -->  
+    <header>
+    <!-- Inicio class navbar -->
+    <nav class="navbar-expand-lg navbar-dark" style="background-color: #0b2239;">
+        <!-- Inicio class container-fluid d-flex -->
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+
+            <!-- Inicio logotipo -->
+            <div class="d-flex">    
+                <a class="navbar-brand me-2 mb-1 d-flex align-items-center">
+                <img src="../img/logotipo-genbook.png" alt="Logotipo" class="img-fluid" id="logo">     
+                </a>
+                <a href="../html/perfil-alumno.html" style="text-decoration: none; color: black;"><h3 style="color: white;">Genbook</h3></a> 
+            </div>
+            <!-- Fin logotipo -->
+
+            <!-- Inicio de elementos centrales (opciones) -->
+            <ul class="navbar-nav flex-row d-none d-md-flex">
+                <li class="nav-item me-3 me-lg-1 active">
+                    <a class="nav-link" href="#"></a>          
+                    <span class="badge rounded-pill badge-notification bg-danger"></span>
+                    </a>
+                </li>
+
+                <li class="nav-item me-3 me-lg-1">
+                    <a class="nav-link" href="#">
+                    <span><i class="fas fa-flag fa-lg"></i></span>
+                    </a>
+                </li>
+
+                <li class="nav-item me-3 me-lg-1">
+                    <a class="nav-link" href="#">
+                    <span><i class="fas fa-video fa-lg"></i></span>
+                    </a>
+                </li>      
+
+                <li class="nav-item me-3 me-lg-1">
+                    <a class="nav-link" href="#">
+                    <span><i class="fas fa-users fa-lg"></i></span>
+                    <span class="badge rounded-pill badge-notification bg-danger">+ 1</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- Fin de elementos centrales (opciones) -->
+
+            <!-- Inicio de identificador alumno logueado -->
+            <ul class="navbar-nav flex-row">
+                <!-- Inicio avatar +  nombre alumno -->
+                <li class="nav-item me-3 me-lg-1">
+                    <a class="nav-link d-sm-flex align-items-sm-center" href="../html/perfil-alumno.html">
+                    <img src="../img/iconos/perfil-alumno.webp" class="rounded-circle" width="38" height="38" alt="" />
+                    <strong class="d-none d-sm-block ms-1" id="id-usr" >Alumno</strong>
+                    </a>
+                </li>
+                <!-- Fin avatar +  nombre alumno -->    
+
+                <!-- Inicio menú para visualizar opciones de alumno -->
+                <li class="nav-item dropdown me-3 me-lg-1">
+                    <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false" >
+                        <i class="fas fa-chevron-circle-down fa-lg"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink" >         
+                        <li>
+                        <a class="dropdown-item" id="btnSalir" href="#">Cerrar Sesion</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Fin menú para visualizar opciones de alumno -->
+            </ul>
+            <!-- Fin de identificador alumno logueado -->
+        </div><!-- Fin class container-fluid d-flex -->
+    </nav><!-- Fin class navbar -->
+  </header><!-- Fin header -->
+<br><br>
+<!-- Inicio-contenido web -->
+    <!-- Inicio flex-1 p-6 md:mt-16 -->
+    <div class="flex-1 p-6 md:mt-16">
+        <!-- Inicio del Container -->
+        <div class="container">
+            <!-- Inicio del row --> 
+            <div class="row">
+                <!-- Inicio col-md-5 col-md-offset-3 --> 
+                <div class="col-md-5 col-md-offset-3">
+                    <!-- Inicio de panel panel-success -->     
+                    <div class="panel panel-success">
+                        <!-- Inicio pane-heading -->
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Bienvenido</h3>
+                            <h4 class="panel-title" id="id-usr2">Alumno</h4>
+                        </div>
+                        <!-- Fin panel-heading -->
+                        
+                        <!-- Inicio panel-heading -->
+                        <div class="panel-body">
+                            <p >
+                            <b>
+                            ¡Sesión iniciada correctamente!
+                            </b>
+                            </p>             
+                        </div><!-- Fin panel-heading -->
+                    </div> <!-- Fin de panel panel-success -->
+                </div><!-- Fin col-md-5 col-md-offset-3 --> 
+            </div><!-- Fin del row --> 
+        </div> <!-- Fin del Container -->
+    </div>
+    <!-- Fin flex-1 p-6 md:mt-16 -->
+
+    <!-- Inicio container -->
+    <div class="container">
+    <!-- Inicio row -->
+    <div class="row">
+        <!-- Inicio área de publicaciones-->
+        <div class="col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12 ui-block" >      
+                <div class="post__author author vcard inline-items ui-block-title">
+                    <img src="../img/iconos/perfil-alumno.webp" alt="foto-perfil" width="42" height="42">
+                    <div class="author-date">
+                        <a class="h6 post__author-name fn" href="#">Profesor Fernando López</a>
+                        <div class="post__date">
+                        <time class="published" datetime="#"><!--poner id-->
+                        Hace unos momentos
+                        </time>
+                        </div>
+                    </div>               
+                </div>
+                <p>Hola jóvenes, he revisado sus exámenes y veo un gran rendimiento en el grupo de matematicas</p>           
+
+                <a href="#" class="more-comments">Ver más comentarios <span>+</span></a>
+
+                <form class="comment-form inline-items">
+                    <div class="post__author author vcard inline-items">
+                        <img loading="lazy" src="../img/iconos/perfil-alumno.webp" width="36" height="36" alt="foto-perfil">
+                        <div class="form-group with-icon-right ">
+                            <textarea class="form-control" placeholder="Escribe un comentario"></textarea>
+                        </div>
+                    </div>
+                    <button class="btn btn-md-2 btn-border-think c-grey btn-transparent custom-color"type="reset" value="Reset" >Cancelar</button>
+                    <button class="btn btn-md-2 btn-primary">Comentar</button>
+                </form>
+        </div><!-- Fin área de publicaciones -->	
+
+        <!-- Inicio col col-xl-3 order-xl-1 -->
+        <div class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12">
+            <!-- Inicio ui-block -->
+            <div class="ui-block">
+                <div class=" post__author ui-block-title">
+                    <img src="../img/iconos/perfil-alumno.webp" width="36" height="36" alt="">
+                    <h6 class="title" id="id-usr4">Alumno</h6>
+                </div>
+                <!-- Inicio ui-block-content -->
+                <div class="ui-block-content">
+                    <ul class="widget w-personal-info item-block">
+                    <li>
+                    <span class="title">Pulsa el botón para conocer a detalle tus pendientes.</span>                  
+                    </li>
+                    <p>
+                    <!-- Inicio botón crear grupo ---> 
+                    <div class="d-grid gap-2 d-md-flex col-9 mx-auto" id="">                 
+                    <button class="btn btn-warning btn-sm" >
+                    <a class="text-nowrap" href="../html/detalle-alumno.html" style="text-decoration: none; color: #ffffff;">+ Ver detalles</a>
+                    </button>
+                    <!-- Fin botón crear grupo --->  
+                    </div><!-- Fin ui-block-content -->
+            </div><!-- Fin ui-block -->
+            </div>
+
+            <!-- INICIO SECCIÓN CLASES -->
+            <!-- Inicio ui-block -->
+            <div class="ui-block">
+                <div class="ui-block-title">
+                    <h6 class="title">Mis clases</h6>
+                </div>
+                <!-- Inicio ui-block-content -->
+                <div class="ui-block-content">
+                    <ul class="widget w-badges"> 
+                            <li>
+                                <a href="#">
+                                <img src="../img/iconos/icon01.png" alt="icono-clase" width="38" height="38">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                <img src="../img/iconos/icon02.png" alt="icono-clase" width="38" height="38">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                <img src="../img/iconos/icon03.png" alt="icono-clase" width="38" height="38">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                <img src="../img/iconos/icon04.png" alt="icono-clase" width="38" height="38">
+                                </a>
+                            </li>
+                    </ul>
+                </div><!-- Fin ui-block-content -->
+            </div><!-- Fin ui-block -->
+            <!-- FIN SECCIÓN CLASES -->      
+    </div><!-- Fin col col-xl-3 order-xl-1 -->
+    </div><!-- Fin row -->
+<!-- Fin contenido web -->
+
+<!-- JS Scripts -->
+<script src="../js/jquery/jquery-1.11.0.js"></script>
+<script src="../js/persistencia-sesiones.js"></script>    
+<!-- MDB -->
+<script src="../js/mdb.min.js" type="text/javascript" ></script>
+<!-- bootstrap.bundle.min.js 5.0.2 -->
+<script src="../js/bootstrap/bootstrap.bundle.min.js" type = "text/javascript" ></script>
+<!-- fontawesome 5.12.1 -->
+<script src="../js/logotipos-fontawesome/all.min.js" type = "text/javascript" ></script>
+
+</body>
+</html>

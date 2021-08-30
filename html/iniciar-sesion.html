@@ -5,26 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión</title>
-    <!-- Estilos CSS-->   
-    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <title>Iniciar sesión | Genbook</title>
+     <!-- Icono -->
+     <link rel="icon" href="../img/logotipo-genbook.png" type="image/x-icon" />
+    <!-- Estilos CSS -->   
+    <link rel="stylesheet" href="../css/estilos-navbar.css" type="text/css">
+    <link rel="stylesheet" href="../css/footer.css" type="text/css">   
+    <!-- bootstrap.min.css 5.0.2 -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" type="text/css">
 </head>
 
 <body>
+<!-- Inicio header -->  
+<header>
 <!-- Inicio class navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- Inicio class container-fluid d-flex -->
     <div class="container-fluid d-flex justify-content-between align-items-center">            
-        <img src="../img/logotipo-red-social.png" alt="Logotipo" class="img-fluid" id="logo">
-        <a href="index.html" style="text-decoration: none; color: black;">
+        <img src="../img/logotipo-genbook.png" alt="Logotipo" class="img-fluid" id="logo">
+        <a href="../index.html" style="text-decoration: none; color: black;">
         <h3>Genbook</h3>
         </a>
 
+        <!-- Inicio botón responsivo  -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation" id="navbar-button">
         <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- Fin botón responsivo  -->
 
         <!-- Inicio class collapse navbar-collapse -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,13 +45,13 @@
 
                      <!-- Inicio quiénes somos -->
                     <li class="nav-item me-3 ms-3">
-                        <a href="about-us.html" class="nav-link text-nowrap">Equipo de desarrollo</a>
+                        <a href="../html/about-us.html" class="nav-link text-nowrap">Equipo de desarrollo</a>
                     </li>
                     <!-- Fin quiénes somos --> 
 
                     <!-- Inicio contáctanos -->
                     <li class="nav-item me-3 ms-3">
-                        <a href="contacto.html" class="nav-link">Contáctanos</a>
+                        <a href="../html/contacto.html" class="nav-link">Contáctanos</a>
                     </li>
                     <!-- Fin contáctanos -->
                     
@@ -50,14 +59,14 @@
 
                 <div class="container-fluid d-flex justify-content-end align-items-center" id="navbar_sesión_buttons">
                      <!-- Inicio botón registro de usuarios --->
-                    <button class="btn btn-dark btn-block" style="box-shadow: 1px 1px 5px gray;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    <strong>Regístrate</strong>
+                    <button class="btn btn-dark btn-block" style="box-shadow: 1px 1px 5px gray;">
+                        <a href = "../html/registro-general.html" class = "link-light" style = "text-decoration: none;"><strong>Regístrate</strong></a>
                     </button>
                     <!-- Fin botón registro de usuarios --->
 
                     <!-- Inicio botón iniciar sesión --->
                     <button class="btn btn-primary btn-xs ms-2" style="box-shadow: 1px 1px 5px gray;">
-                    <a class="text-nowrap" href="iniciar-sesion.html" style="text-decoration: none; color: white;"><strong>Iniciar sesión</strong></a>
+                    <a class="text-nowrap" href="../html/iniciar-sesion.html" style="text-decoration: none; color: white;"><strong>Iniciar sesión</strong></a>
                     </button>
                     <!-- Fin botón iniciar sesión --->
                                       
@@ -66,9 +75,12 @@
         </div><!-- Fin class collapse navbar-collapse -->
     </div><!-- Fin class container-fluid d-flex -->
 </nav><!-- Fin class navbar -->
+</header><!-- Fin header -->
+<br><br>
+<section class = "container-fluid mt-5 d-flex justify-content-center">
 
-<!-- Inicio formulario-iniciar-sesión -->
-<section class="p-4 d-flex justify-content-center mb-4">
+    <!-- Inicio formulario-iniciar-sesión -->
+<div class="p-4 d-flex justify-content-center mb-4 shadow p-3 mb-5 bg-body w-50 border rounded">
     <form id="formLogin" class="text-center" style="width: 100%; max-width: 350px">
         <h2>Iniciar sesión</h2>
         Ingresa tus datos
@@ -91,12 +103,12 @@
         <!-- Fin campo contraseña -->
         
         <!-- Inicio recuérdame -->
-        <div class="form-check">
+        <!-- <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
             <label class="form-check-label" for="flexCheckChecked">
               Recuérdame
             </label>
-        </div>
+        </div> -->
        <p><p>
         <!-- Fin recuérdame -->
 
@@ -107,42 +119,70 @@
 
         <!-- Inicio olvidaste tu contraseña -->
         <p>
-        <a href="#" class="nav-link text-nowrap">¿Olvidaste tu contraseña?</a>
+       <!--  <a href="#" class="nav-link text-nowrap">¿Olvidaste tu contraseña?</a> -->
         <!-- Fin olvidaste tu contraseña -->
         
     </form>
-</section>
+</div>
 <!-- Fin formulario-iniciar-sesión -->
+</section>
 
-<!-- Inicio de modal para registro de usuarios -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Registro</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+<!-- Inicio de footer -->
+<footer>
+    <!-- Inicio Diseño del primer block (Genbook) -->
+    <div class="container_footer" style = "margin-top: 100px;">
+        <div class="box_footer">
+            <div class="logo">
+                <img src="../img/logotipo-genbook.png" alt="imagen_genbook">
+                <h3 class="tit" >Genbook</h3>
             </div>
-            <div class="modal-body">
-                <p>Registra el tipo de usuario</p>
-            </div>
-            <div class="modal-footer">
-                <i class="icon-user"></i> <a class="btn btn-primary" data-bs-toggle="modal" href="../html/prototype_singin_profesor.html" role="button">Profesor</a>
-                <i class="icon-user"></i>  <a class="btn btn-primary" data-bs-toggle="modal" href="../html/prototype_singin_alumno.html" role="button">Alumno</a>  
+            <div class="text_fo">
+                <p>Estamos para servirte. Puedes ponerte en contacto con nosotros o, bien, visitar nuestras redes sociales para conocernos mejor.</p>
             </div>
         </div>
-    </div>
-</div>
-<!-- Fin de modal para registro de usuarios -->
 
-<!--Css Fontello-->
-<link rel="stylesheet" href="../css/fontello.css">
-<!--scripts de validación-->
+        <!-- Inicio Diseño de la segunda caja Sobre Nosotros -->
+        <div class="box_footer">
+            <h2>Sobre Nosotros</h2>
+            <a href="../html/index.html">Inicio</a>
+            <a href="../html/about-us.html">Acerca de</a>
+            <a href="../html/contacto.html">Contáctanos</a>
+            <a href="#">soporte.tecnico@genbook.mx</a>                          
+        </div>
+        <!-- Fin Diseño de la segunda caja Sobre Nosotros -->
+
+        <!-- Inicio Diseño de la tercera caja Redes Sociales -->
+        <div class="box_footer">
+            <h2>Redes Sociales</h2>
+            <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+            <a href="#"> <i class="fab fa-twitter-square"></i> Twitter</a>
+            <a href="#"> <i class="fab fa-instagram-square"></i> Instagram</a>
+            <a href="#"> <i class="fab fa-linkedin"></i> Linkedin</a>              
+        </div>
+        <!-- Fin Diseño de la tercera caja Redes Sociales -->
+
+    </div>
+    <!-- Fin Diseño del primer block (Genbook) -->
+
+    <!-- Inicio Diseño de Copyright -->
+    <div class="box_copyright">
+        <hr>
+        <p>Todos los derechos reservados © 2021 <b>Genbook</b></p>
+    </div>
+    <!-- Fin Diseño de Copyright -->
+    
+  </footer>
+  <!-- Fin de footer-->
+
+<!-- JS Scripts -->
+<!-- Scripts de validación -->
 <script src="../js/jquery/jquery-1.11.0.js"></script>
 <script src="../js/iniciar-sesion.js"></script>
+<!-- Font de iconos -->
+<script src="../js/logotipos-fontawesome/logotipos.js" crossorigin="anonymous"></script>
 <!-- <script src="../js/validaciones-iniciar-sesion.js"></script> -->
-<!--bootstrap.min.css 5.0.2-->
-<link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet" >
-<!--bootstrap.bundle.min.js 5.0.2-->
+<!-- bootstrap.bundle.min.js 5.0.2 -->
 <script src="../js/bootstrap/bootstrap.bundle.min.js" type = "text/javascript" ></script> 
    
 </body>
