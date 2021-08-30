@@ -24,6 +24,9 @@ window.onload = function(e) {
                             <li style = "list-style: none; padding: 10px;">
                                Grado: <strong>${clase[i].claseGrado}</strong>
                             </li>
+                            <li style = "list-style: none; padding: 10px;">
+                               Links: <strong>${clase[i].claseLink}</strong>
+                            </li>
                         </ul>
 
                     </div>
