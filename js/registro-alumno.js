@@ -3,80 +3,82 @@ const btnEnviar = document.getElementById('btn-enviar');
 //Validador campos
 const validate = (validador) => {
     validador.preventDefault();
-    const nombre_usuario = document.getElementById('nombre');
-    const apellido_usuario = document.getElementById('apellido');
-    const input_usuario= document.getElementById('usuario');
-    const correo_electronico = document.getElementById('email');
-    const num_telefono = document.getElementById('telefono');
-    const input_password = document.getElementById('password');
-    const mensaje = document.getElementById('mensaje');
+    //Inicio declaración constantes
+    const nombre_alumno   = document.getElementById('nombreAlumno');
+    const apellido_alumno = document.getElementById('apellidoAlumno');
+    const usuario_alumno  = document.getElementById('usuarioAlumno');
+    const correo_alumno   = document.getElementById('correoAlumno');
+    const telefono_alumno = document.getElementById('telefonoAlumno');
+    const password_alumno = document.getElementById('passwordAlumno');
+    const repite_password = document.getElementById('repitePassword');
+    //Fin declaración constantes
 
     //Validador nombre
-    if (!nombre_valido(nombre.value)) {
+    if (!nombre_valido(nombreAlumno.value)) {
         Swal.fire({
             icon: 'warning',
             title: 'MENSAJE',
             text: 'Por favor, escribe un nombre válido',
           });
-        nombre.focus();
+        nombreAlumno.focus();
         return false;
     }//Fin validador nombre
 
     //Validador apellido
-    if (!apellido_valido(apellido.value)) {
+    if (!apellido_valido(apellidoAlumno.value)) {
         Swal.fire({
             icon: 'warning',
             title: 'MENSAJE',
             text: 'Por favor, escribe un apellido válido',
           });
-        apellido.focus();
+        apellidoAlumno.focus();
         return false;
     } //Fin validador apellido 
 
     //Validador usuario
-    if (!usuario_valido(usuario.value)) {
+    if (!usuario_valido(usuarioAlumno.value)) {
         Swal.fire({
             icon: 'warning',
             title: 'MENSAJE',
             text: 'Por favor, escribe un usuario válido',
           });
-       usuario.focus();
+       usuarioAlumno.focus();
        return false;
     } //Fin validador usuario
     
      //Validador teléfono
-     if (!telefono_valido(telefono.value)) {
+     if (!telefono_valido(telefonoAlumno.value)) {
       Swal.fire({
           icon: 'warning',
           title: 'MENSAJE',
           text: 'Por favor, escribe un telefono válido',
         });
-      telefono.focus();
+      telefonoAlumno.focus();
       return false;
   } //Fin validador teléfono
 
     //Validador correo electrónico
-    if (!correo_valido(email.value)) {
+    if (!correo_valido(correoAlumno.value)) {
         Swal.fire({
             icon: 'warning',
             title: 'MENSAJE',
             text: 'Por favor, escribe un correo electronico válido',
            });
-        email.focus();
+        correoAlumno.focus();
         return false;
     } //Fin validador correo electrónico    
   
     //Validador passwords   
-    password = document.getElementById('password');
+    passwordAlumno = document.getElementById('passwordAlumno');
     repitePassword = document.getElementById('repitePassword');
     
-    if (password.value != repitePassword.value) {       
+    if (passwordAlumno.value != repitePassword.value) {       
         Swal.fire({
           icon: 'warning',
           title: 'MENSAJE',
           text: 'Por favor, verifica que tu contraseña sea la misma',
         });
-      password.focus(); 
+      passwordAlumno.focus(); 
       return false;
     } //Fin validador passwords
     
@@ -96,58 +98,61 @@ const validate = (validador) => {
         title: 'Datos enviados exitosamente'
       })
 
-    document.getElementById("contact-form").reset();
-
       let user = {
-        nombre: nombre_usuario.value,
+        nombre_alumno: nombre_alumno.value,
         tipo_usuario: "Alumno",
-        apellido: apellido_usuario.value,
-        usuario: input_usuario.value,
-        correo_electronico: correo_electronico.value,
-        num_telefono: num_telefono.value,
-        password: input_password.value,
+        apellido_alumno: apellido_alumno.value,
+        usuario_alumno: usuario_alumno.value,
+        correo_alumno: correo_alumno.value,
+        telefono_alumno: telefono_alumno.value,
+        password_alumno: password_alumno.value,
+        password_alumno: repite_password.value,
       }
 
+      nombre_alumno.value = '';
+      apellido_alumno.value = '';
+      usuario_alumno.value = '';  
+      correo_alumno.value = ''; 
+      telefono_alumno.value = '';  
+      password_alumno.value = ''; 
+      repite_password.value = ''; 
+
       appendObjectToLocalStorage(user);
-
-    return true;
-
+      return true;
 }
 //Fin validador campos
 
 function appendObjectToLocalStorage(object){
-  let users = [],
-  dataInLocalStorage = localStorage.getItem('users');
+  let alumno = [],
+  dataInLocalStorage = localStorage.getItem('alumno');
 
   if (dataInLocalStorage !== null) 
   {
-  users = JSON.parse(dataInLocalStorage);
+  alumno = JSON.parse(dataInLocalStorage);
   }
-  users.push(object);
-  localStorage.setItem('users', JSON.stringify(users));
+  alumno.push(object);
+  localStorage.setItem('alumno', JSON.stringify(alumno));
 }
-
 
 //Declaración constantes para regex
-const nombre_valido = nombre => {
-    return /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u.test(nombre);
+const nombre_valido = nombreAlumno => {
+    return /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u.test(nombreAlumno);
 }
 
-const apellido_valido = apellido => {
-    return /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u.test(apellido);
+const apellido_valido = apellidoAlumno => {
+    return /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u.test(apellidoAlumno);
 }
 
-const usuario_valido = usuario => {
-  return /^[a-zA-Z0-9-_.]+$/u.test(usuario);
+const usuario_valido = usuarioAlumno => {
+  return /^[a-zA-Z0-9-_.]+$/u.test(usuarioAlumno);
 }
 
-
-const correo_valido = email => {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+const correo_valido = correoAlumno => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(correoAlumno);
 }
 
-const telefono_valido = telefono => {
-    return /^\d{2}\d{8}$/.test(telefono);
+const telefono_valido = telefonoAlumno => {
+    return /^\d{2}\d{8}$/.test(telefonoAlumno);
 }
 
 btnEnviar.addEventListener('click', validate);

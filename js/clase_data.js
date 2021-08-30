@@ -3,7 +3,8 @@ const form = document.getElementById("clase_form"),
       claseMateria = document.getElementById("clase_materia"),
       claseHrIni = document.getElementById("clase_hrinicial"),
       clase_hrFin = document.getElementById("clase_hrfinal"),
-      claseGrado = document.getElementById("clase_grado");
+      claseGrado = document.getElementById("clase_grado"),
+      claseLink = document.getElementById("materiaLink");
 
 form.addEventListener("submit", (e) => {
     
@@ -11,7 +12,9 @@ form.addEventListener("submit", (e) => {
         nombre: claseNombre.value,
         materia: claseMateria.value,
         horaIni: claseHrIni.value,
-        horaFin: clase_hrFin.value
+        horaFin: clase_hrFin.value,
+        claseGrado: claseGrado.value,
+        claseLink: claseLink.value
     }
 
     appendObjectToLocalStorage(clase);
@@ -26,6 +29,6 @@ function appendObjectToLocalStorage(object){
     clases = JSON.parse(dataInLocalStorage);
     }
     clases.push(object);
-    localStorage.setItem('users', JSON.stringify(clases));
+    localStorage.setItem('clases', JSON.stringify(clases));
   }
   
