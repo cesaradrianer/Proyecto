@@ -27,6 +27,7 @@ window.onload = function(e) {
                             <li style = "list-style: none; padding: 10px;">
                                Links: <strong>${clase[i].claseLink}</strong>
                             </li>
+
                         </ul>
 
                     </div>

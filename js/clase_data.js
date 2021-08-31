@@ -27,6 +27,7 @@ claseLinkSwitch.addEventListener("click", (e) => {
         
 })
 
+
 form.addEventListener("submit", (e) => {
     
     let clase = {
